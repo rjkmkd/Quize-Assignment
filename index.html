@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GATE Exam Quiz</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="quiz-container">
+    <h1>GATE CSE Quiz</h1>
+    <div id="question-box">
+        <div class="box">
+            <span id="number"></span>
+            <p id="question"></p>
+        </div>
+        <div id="options">
+    <button onclick="selectOption('A')" id="option_a" class="answers">Option A</button>
+    <button onclick="selectOption('B')" id="option_b" class="answers">Option B</button>
+    <button onclick="selectOption('C')" id="option_c" class="answers">Option C</button>
+    <button onclick="selectOption('D')" id="option_d" class="answers">Option D</button>
+</div>
+
+    </div>
+
+
+    <ul class="questions-list">
+        <li onclick="goToQuestion(1)">1</li>
+        <li onclick="goToQuestion(2)">2</li>
+        <li onclick="goToQuestion(3)">3</li>
+        <li onclick="goToQuestion(4)">4</li>
+        <li onclick="goToQuestion(5)">5</li>
+        <li onclick="goToQuestion(6)">6</li>
+        <li onclick="goToQuestion(7)">7</li>
+        <li onclick="goToQuestion(8)">8</li>
+        <li onclick="goToQuestion(9)">9</li>
+        <li onclick="goToQuestion(10)">10</li>
+    </ul>
+
+
+
+    <div class="btn-container">
+        <button onclick="skipQuestion()" class="skipButton">Skip</button>
+        <button onclick="nextQuestion()" class="nextButton">Next</button>
+    </div>
+
+    
+</div>
+<script src="script.js"></script>
+</body>
+</html>

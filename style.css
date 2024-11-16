@@ -1,0 +1,113 @@
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f5f5f5;
+}
+#quiz-container {
+  width: 100%;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+.box {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+#number {
+  font-size: x-large;
+  border: 4px solid black;
+  padding: 10px;
+  border-radius: 50%;
+}
+#question {
+  font-size: xx-large;
+}
+#options {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+/* .answers{
+    width: 300px;
+    background: transparent;
+} */
+button {
+  display: block;
+  width: 100%;
+  margin: 5px 0;
+  padding: 10px;
+  font-size: larger;
+  font-weight: 500;
+}
+.btn-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+.nextButton {
+  background-color: rgb(39, 166, 239);
+  border-radius: 10px;
+  font-weight: 300;
+}
+.skipButton {
+  background-color: rgb(238, 58, 238);
+  border-radius: 10px;
+  font-weight: 300;
+}
+
+.answers {
+  background-color: #f0f0f0;
+  color: #333;
+  border: 1px solid #ccc;
+  padding: 10px;
+  width: 100%;
+  text-align: left;
+  cursor: pointer;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.selected-answer {
+  background-color: #007bff; /* Blue color for selected */
+  color: #fff;
+}
+.questions-list {
+    display: flex; 
+    justify-content: center;
+    gap: 10px; /* Space between question numbers */
+    padding: 20px 0;
+    list-style: none; /* Remove default list styles */
+}
+
+.questions-list li {
+    width: 40px;
+    height: 40px;
+    background-color: #e0c6f7; /* Light purple background */
+    color: #333;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%; /* Make it rounded */
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s;
+    border: 2px solid #b394ff;
+}
+
+.questions-list li:hover {
+    background-color: #cda0ff; /* Darker shade on hover */
+}
+
+.questions-list li.active {
+    background-color: #7a3cff; /* Active state color */
+    color: #fff;
+}
+
